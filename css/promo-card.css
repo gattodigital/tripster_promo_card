@@ -15,6 +15,12 @@
   margin: 0 auto;
 }
 
+.promo-card.truncated .info .description,
+.promo-card.truncated .pricebox .availability,
+.promo-card.truncated .pricebox .full-price {
+  display: none !important;
+}
+
 .promo-card.border-solid {
   border: 1px solid #D1D1D1;
   box-shadow: none;
@@ -89,6 +95,7 @@
 }
 
 .promo-card .media img {
+  width: 100%;
   max-width: 305px;
 }
 
@@ -140,7 +147,7 @@
 }
 
 .promo-card .discount-price {
-  color: #000000;
+  color: #363C48;
   font-weight: 700;
   margin-bottom: 5px;
 }
@@ -148,7 +155,7 @@
 .promo-card h2.title {
   font-size: 20px;
   font-weight: 600;
-  color: #1F2C35;
+  color: #363C48;
   margin: 0 0 10px 0;
   padding: 0;
 }
@@ -194,9 +201,9 @@
 
 /* Tablet Display */
 
-@media (min-width: 655px) {
+@media (min-width: 576px) {
   .promo-card {
-    max-width: 638px;
+    max-width: 720px;
   }
   .promo-card .media {
     -ms-flex: 0 0 48%;
@@ -205,9 +212,19 @@
     overflow: hidden;
   }
   .promo-card .media img {
+    width: auto;
     max-width: initial;
     height: 305px;
   }
+  .promo-card.truncated .img-wrapper {
+      display: flex;
+      height: 204px;
+      align-items: center;
+      justify-content: center;
+    }
+    .promo-card.truncated .media img {
+      width: 100%;
+    }
   .promo-card .card-details {
     -ms-flex: 0 0 52%;
     flex: 0 0 52%;
@@ -219,33 +236,33 @@
 /* Desktop Display */
 
 @media (min-width: 992px) {
-  .promo-card {
+  .promo-card:not(.truncated) {
     max-width: 965px;
   }
   .promo-card .d-lg-none {
     display: none !important;
   }
-  .promo-card .media {
+  .promo-card:not(.truncated) .media {
     position: static;
     -ms-flex: 0 0 32%;
     flex: 0 0 32%;
     max-width: 32%;
     max-height: 204px;
   }
-  .promo-card .media img {
+  .promo-card:not(.truncated) .media img {
     height: auto;
     max-width: 100%;
   }
-  .promo-card .offer-tab {
+  .promo-card:not(.truncated) .offer-tab {
     padding: 5px 15px 5px 22px;
     width: 180px;
   }
-  .promo-card .card-details {
+  .promo-card:not(.truncated) .card-details {
     -ms-flex: 0 0 68%;
     flex: 0 0 68%;
     max-width: 68%;
   }
-  .promo-card .info {
+  .promo-card:not(.truncated) .info {
     -ms-flex: 0 0 70%;
     flex: 0 0 70%;
     max-width: 70%;
@@ -263,18 +280,18 @@
     flex: 0 0;
     -ms-flex: 0 0;
   }
-  .promo-card .policy .cancellation,
-  .promo-card .policy .availability {
+  .promo-card:not(.truncated) .policy .cancellation,
+  .promo-card:not(.truncated) .policy .availability {
     margin-bottom: 15px;
     margin-right: 15px;
   }
-  .promo-card .pricebox {
+  .promo-card:not(.truncated) .pricebox {
     flex: 0 0 30%;
     max-width: 30%;
     padding: 0 12px 10px 12px;
     margin-top: 0;
   }
-  .promo-card .value {
+  .promo-card:not(.truncated) .value {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
