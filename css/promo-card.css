@@ -214,6 +214,7 @@
   }
   .promo-card .media img {
     width: auto;
+    max-width: 100%; /* IE Fix, ignored by Chrome */
     max-width: initial;
     height: 305px;
   }
