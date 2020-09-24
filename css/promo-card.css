@@ -1,0 +1,274 @@
+/***** promoERTISING CARD *****/
+
+
+/* Mobile Display */
+
+.promo-card {
+  font-family: 'Lato', sans-serif !important;
+  font-size: 12px;
+  color: #707070;
+  position: relative;
+  max-width: 305px;
+  border: 1px solid rgba(112, 112, 112, 0.13);
+  background: #ffffff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.promo-card.border-solid {
+  border: 1px solid #D1D1D1;
+  box-shadow: none;
+}
+
+.promo-card *,
+.promo-card ::after,
+ ::before {
+  box-sizing: border-box;
+}
+
+.promo-card .img-fluid {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.promo-card .d-block {
+  display: block;
+}
+
+.promo-card a {
+  text-decoration: none;
+}
+
+.promo-card .fas {
+  font-size: 14px;
+}
+
+.promo-card .gray {
+  color: #D1D1D1;
+}
+
+.promo-card .gold {
+  color: #FAAA2F;
+}
+
+.promo-card .small {
+  font-size: 12px;
+  font-weight: 400;
+  color: #707070;
+}
+
+.promo-card .mb {
+  margin-bottom: 10px;
+}
+
+.promo-card .mr {
+  margin-right: 4px;
+}
+
+.promo-card .row {
+  margin: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.promo-card .center-align {
+  -ms-flex-align: center!important;
+  align-items: center!important;
+}
+
+.promo-card .info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+}
+
+.promo-card .media {
+  position: relative;
+}
+
+.promo-card .offer-tab {
+  background: #59B552;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  width: 178px;
+  display: flex;
+  -ms-flex-align: center!important;
+  align-items: center!important;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.promo-card .offer-tab .indent {
+  position: absolute;
+  top: 0px;
+  left: -18px;
+  border-style: solid;
+  border-width: 0px 25px 25px 0;
+  border-color: transparent #ffffff transparent transparent;
+  transform: rotate(45deg);
+}
+
+.promo-card .offer-tab .fas {
+  font-size: 12px;
+}
+
+.promo-card .offer-tab .small {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 10px;
+  text-transform: none;
+  margin-left: auto;
+}
+
+.promo-card .value {
+  font-size: 18px;
+  text-align: right;
+}
+
+.promo-card .full-price {
+  font-weight: 300;
+}
+
+.promo-card .discount-price {
+  color: #000000;
+  font-weight: 700;
+}
+
+.promo-card h2.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1F2C35;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.promo-card .policy {
+  -ms-flex: 0 0 58.333333%;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+
+.promo-card .value {
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+
+.promo-card .pricebox {
+  padding: 0 15px 10px;
+}
+
+.promo-card .cta {
+  margin-top: auto;
+  width: 100%;
+}
+
+.promo-card a.button {
+  background-color: #008FC9;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 6px 24px;
+  text-align: center;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  vertical-align: middle;
+  line-height: 1.35;
+}
+
+
+/* Tablet Display */
+
+@media (min-width: 655px) {
+  .promo-card {
+    max-width: 638px;
+  }
+  .promo-card .media {
+    flex: 0 0 48%;
+    max-width: 48%;
+    overflow: hidden;
+  }
+  .promo-card .media img {
+    max-width: initial;
+    height: 305px;
+  }
+  .promo-card .card-details {
+    flex: 0 0 52%;
+    max-width: 52%;
+  }
+}
+
+
+/* Desktop Display */
+
+@media (min-width: 992px) {
+  .promo-card {
+    max-width: 965px;
+  }
+  .promo-card .d-lg-none {
+    display: none !important;
+  }
+  .promo-card .media {
+    position: initial;
+    flex: 0 0 32%;
+    max-width: 32%;
+    max-height: 204px;
+  }
+  .promo-card .media img {
+    height: auto;
+    max-width: 100%;
+  }
+  .promo-card .offer-tab {
+    padding: 5px 15px 5px 22px;
+    width: 180px;
+  }
+  .promo-card .card-details {
+    flex: 0 0 68%;
+    max-width: 68%;
+  }
+  .promo-card .info {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+  .promo-card h2.title {
+    font-size: 20px;
+  }
+  .promo-card .policy.lg-only {
+    all: unset;
+    margin: auto 0 10px;
+  }
+  .promo-card .policy .cancellation,
+  .promo-card .policy .availability {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+  .promo-card .pricebox {
+    flex: 0 0 30%;
+    max-width: 30%;
+    padding: 0 15px 15px 10px;
+  }
+  .promo-card .value {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .lg-only {
+    display: none !important;
+  }
+}
