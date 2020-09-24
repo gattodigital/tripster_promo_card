@@ -85,6 +85,7 @@
 }
 
 .promo-card .info {
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   padding: 10px 15px;
@@ -102,6 +103,7 @@
   text-transform: uppercase;
   padding: 5px 15px;
   width: 178px;
+  display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center!important;
   align-items: center!important;
@@ -197,6 +199,7 @@
     max-width: 638px;
   }
   .promo-card .media {
+    -ms-flex: 0 0 48%;
     flex: 0 0 48%;
     max-width: 48%;
     overflow: hidden;
@@ -206,6 +209,7 @@
     height: 305px;
   }
   .promo-card .card-details {
+    -ms-flex: 0 0 52%;
     flex: 0 0 52%;
     max-width: 52%;
   }
@@ -223,6 +227,7 @@
   }
   .promo-card .media {
     position: initial;
+    -ms-flex: 0 0 32%;
     flex: 0 0 32%;
     max-width: 32%;
     max-height: 204px;
@@ -236,10 +241,12 @@
     width: 180px;
   }
   .promo-card .card-details {
+    -ms-flex: 0 0 68%;
     flex: 0 0 68%;
     max-width: 68%;
   }
   .promo-card .info {
+    -ms-flex: 0 0 70%
     flex: 0 0 70%;
     max-width: 70%;
   }
@@ -256,11 +263,13 @@
     margin-right: 15px;
   }
   .promo-card .pricebox {
+    -ms-flex: 0 0 30%;
     flex: 0 0 30%;
     max-width: 30%;
     padding: 0 15px 15px 10px;
   }
   .promo-card .value {
+    -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
     margin-top: 25px;
