@@ -118,15 +118,16 @@
 .promo-card .offer-tab .indent {
   position: absolute;
   top: 0px;
-  left: -18px;
+  left: -15px;
   border-style: solid;
-  border-width: 0px 25px 25px 0;
+  border-width: 0px 23px 23px 0;
   border-color: transparent #ffffff transparent transparent;
   transform: rotate(45deg);
 }
 
 .promo-card .offer-tab .fas {
   font-size: 12px;
+  margin-right: 8px;
 }
 
 .promo-card .offer-tab .small {
@@ -217,14 +218,11 @@
     height: 305px;
   }
   .promo-card.truncated .img-wrapper {
-      display: flex;
-      height: 204px;
-      align-items: center;
-      justify-content: center;
-    }
-    .promo-card.truncated .media img {
-      width: 100%;
-    }
+    display: flex;
+    height: 204px;
+    align-items: center;
+    justify-content: center;
+  }
   .promo-card .card-details {
     -ms-flex: 0 0 52%;
     flex: 0 0 52%;
@@ -241,6 +239,12 @@
   }
   .promo-card .d-lg-none {
     display: none !important;
+  }
+  .promo-card.truncated .lg-only {
+    display: none !important;
+  }
+  .promo-card.truncated .d-lg-none {
+    display: block !important;
   }
   .promo-card:not(.truncated) .media {
     position: static;
