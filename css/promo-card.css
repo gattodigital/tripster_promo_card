@@ -199,6 +199,11 @@
   line-height: 1.35;
 }
 
+.promo-card a.button:hover,
+.promo-card a.button:active {
+  opacity: 0.9;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.25)
+}
 
 /* Tablet Display */
 
