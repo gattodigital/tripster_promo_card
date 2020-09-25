@@ -8,7 +8,7 @@
   font-size: 12px;
   color: #707070;
   position: relative;
-  max-width: 305px;
+  max-width: 460px;
   border: 1px solid rgba(112, 112, 112, 0.13);
   background: #ffffff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
@@ -96,7 +96,7 @@
 
 .promo-card .media img {
   width: 100%;
-  max-width: 305px;
+  max-width: 460px;
 }
 
 .promo-card .offer-tab {
@@ -204,30 +204,56 @@
 
 @media (min-width: 576px) {
   .promo-card {
-    max-width: 720px;
+    max-width: 940px;
+  }
+  .promo-card.truncated {
+    max-width: 740px;
   }
   .promo-card .media {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    overflow: hidden;
+  }
+  .promo-card.truncated .media {
     -ms-flex: 0 0 48%;
     flex: 0 0 48%;
     max-width: 48%;
-    overflow: hidden;
   }
   .promo-card .media img {
     width: auto;
     max-width: 100%; /* IE Fix, ignored by Chrome */
     max-width: initial;
-    height: 305px;
+    height: auto;
+    max-height: 330px;
   }
-  .promo-card.truncated .img-wrapper {
+  .promo-card.truncated .media img {
+    max-height: 272px;
+  }
+  .promo-card .img-wrapper {
     display: flex;
-    height: 204px;
+    height: 305px;
     align-items: center;
     justify-content: center;
   }
+  .promo-card.truncated .img-wrapper {
+    height: 204px;
+  }
   .promo-card .card-details {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .promo-card.truncated .card-details {
     -ms-flex: 0 0 52%;
     flex: 0 0 52%;
     max-width: 52%;
+  }
+}
+
+@media (min-width: 768px) {
+  .promo-card .media img {
+    max-height: 355px;
   }
 }
 
@@ -246,6 +272,9 @@
   }
   .promo-card.truncated .d-lg-none {
     display: block !important;
+  }
+  .promo-card:not(.truncated) .img-wrapper {
+    height: 204px;
   }
   .promo-card:not(.truncated) .media {
     position: static;
