@@ -218,7 +218,7 @@
     max-width: 720px;
   }
   .promo-card:not(.sm) .img-wrapper {
-    display: flex;
+    display: grid;
     height: 100%;
     align-items: center;
     justify-content: center;
@@ -239,7 +239,7 @@
     width: auto;
     max-width: 100%; /* IE Fix, ignored by Chrome */
     max-width: initial;
-    height: 100%;
+    height: auto;
     max-height: 323px;
   }
   .promo-card.truncated:not(.sm) .media img {
