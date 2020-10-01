@@ -14,7 +14,7 @@
   background: #ffffff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   margin: 0 auto;
-  line-height: initial !important;
+  line-height: normal !important;
 }
 
 .promo-card.border-solid {
@@ -318,6 +318,7 @@
   }
   .promo-card:not(.truncated):not(.sm):not(.md) .media img {
     height: auto;
+    max-height: 230px;
     max-width: 100%;
   }
   .promo-card:not(.truncated):not(.sm):not(.md) .offer-tab {
