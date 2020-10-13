@@ -74,6 +74,10 @@
   margin-right: 4px;
 }
 
+.promo-card .ml {
+  margin-left: 4px;
+}
+
 .promo-card .row {
   margin: 0;
   display: -ms-flexbox;
