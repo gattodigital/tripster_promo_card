@@ -1,6 +1,6 @@
 $( document ).ready(function() {
   //console.log( "jquery loaded!" );
-  $(".description").each(function () {
+  $(".promo-card .details .description").each(function () {
     len=$(this).text().length;
     str= $(this).text().substr(0,190);
     lastIndexOf = str.lastIndexOf(" "); 
