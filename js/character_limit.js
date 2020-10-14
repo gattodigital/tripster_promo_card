@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-  console.log( "jquery loaded!" );
+  //console.log( "jquery loaded!" );
   $(".description").each(function () {
     len=$(this).text().length;
     str= $(this).text().substr(0,190);
